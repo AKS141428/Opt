@@ -1,0 +1,125 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>UPSC Optional Subject Selection Tool</title>\
+    <link rel="stylesheet" href="style.css">\
+</head>\
+<body>\
+    <div class="container">\
+        <h1>UPSC Optional Subject Selection Tool</h1>\
+        <form id="selectionForm">\
+            <!-- Question 1 -->\
+            <div class="question">\
+                <label for="academicBackground">1. What is your academic background or field of study?</label><br>\
+                <select id="academicBackground" name="academicBackground">\
+                    <option value="Science">Science</option>\
+                    <option value="Engineering">Engineering</option>\
+                    <option value="Commerce">Commerce</option>\
+                    <option value="Humanities">Humanities</option>\
+                    <option value="Social Sciences">Social Sciences</option>\
+                    <option value="Professional Courses">Professional Courses (e.g., Law, Management, Medicine)</option>\
+                    <option value="Languages and Literature">Languages and Literature</option>\
+                </select>\
+            </div>\
+            <!-- Question 2 -->\
+            <div class="question">\
+                <label for="interestAreas">2. Which subjects do you find most interesting or engaging?</label><br>\
+                <select id="interestAreas" name="interestAreas">\
+                    <option value="Natural Sciences">Natural Sciences (e.g., Physics, Chemistry, Biology)</option>\
+                    <option value="Social Sciences">Social Sciences (e.g., Sociology, Anthropology, Political Science)</option>\
+                    <option value="Humanities">Humanities (e.g., History, Philosophy, Public Administration)</option>\
+                    <option value="Technical and Engineering">Technical and Engineering (e.g., Civil Engineering, Mechanical Engineering)</option>\
+                    <option value="Professional Courses">Professional Courses (e.g., Commerce, Law, Management)</option>\
+                    <option value="Literature">Literature</option>\
+                </select>\
+            </div>\
+            <!-- Question 3 -->\
+            <div class="question">\
+                <label for="overlapGS">3. Do you prefer an optional subject that has significant overlap with the General Studies (GS) papers?</label><br>\
+                <select id="overlapGS" name="overlapGS">\
+                    <option value="Yes">Yes</option>\
+                    <option value="No">No</option>\
+                </select>\
+            </div>\
+            <!-- Question 4 -->\
+            <div class="question">\
+                <label for="professionalBackground">4. Does your professional background align with any specific optional subject?</label><br>\
+                <select id="professionalBackground" name="professionalBackground">\
+                    <option value="Yes">Yes</option>\
+                    <option value="No">No</option>\
+                </select>\
+                <input type="text" id="professionalSubject" name="professionalSubject" placeholder="If yes, specify" style="display: none;">\
+            </div>\
+            <!-- Question 5 -->\
+            <div class="question">\
+                <label for="scoringPotential">5. How important is the scoring potential of the optional subject in your decision-making?</label><br>\
+                <select id="scoringPotential" name="scoringPotential">\
+                    <option value="Very Important">Very Important</option>\
+                    <option value="Important">Important</option>\
+                    <option value="Neutral">Neutral</option>\
+                    <option value="Not Important">Not Important</option>\
+                </select>\
+            </div>\
+            <!-- Question 6 -->\
+            <div class="question">\
+                <label for="studyMaterialAvailability">6. How important is the availability of study material for the optional subject?</label><br>\
+                <select id="studyMaterialAvailability" name="studyMaterialAvailability">\
+                    <option value="Very Important">Very Important</option>\
+                    <option value="Important">Important</option>\
+                    <option value="Neutral">Neutral</option>\
+                    <option value="Not Important">Not Important</option>\
+                </select>\
+            </div>\
+            <!-- Question 7 -->\
+            <div class="question">\
+                <label for="timeCommitment">7. How much time can you dedicate to studying your optional subject each week?</label><br>\
+                <select id="timeCommitment" name="timeCommitment">\
+                    <option value="Less than 10 hours">Less than 10 hours</option>\
+                    <option value="10-20 hours">10-20 hours</option>\
+                    <option value="20-30 hours">20-30 hours</option>\
+                    <option value="More than 30 hours">More than 30 hours</option>\
+                </select>\
+            </div>\
+            <!-- Question 8 -->\
+            <div class="question">\
+                <label for="syllabusLength">8. Do you prefer an optional subject with a shorter syllabus?</label><br>\
+                <select id="syllabusLength" name="syllabusLength">\
+                    <option value="Yes">Yes</option>\
+                    <option value="No">No</option>\
+                </select>\
+            </div>\
+            <!-- Question 9 -->\
+            <div class="question">\
+                <label for="previousPreparation">9. Have you already prepared or studied any subject that you are considering as an optional?</label><br>\
+                <select id="previousPreparation" name="previousPreparation">\
+                    <option value="Yes">Yes</option>\
+                    <option value="No">No</option>\
+                </select>\
+                <input type="text" id="preparedSubject" name="preparedSubject" placeholder="If yes, specify" style="display: none;">\
+            </div>\
+            <!-- Question 10 -->\
+            <div class="question">\
+                <label for="caseStudiesInterest">10. Are you more interested in subjects that involve case studies and practical applications?</label><br>\
+                <select id="caseStudiesInterest" name="caseStudiesInterest">\
+                    <option value="Yes">Yes</option>\
+                    <option value="No">No</option>\
+                </select>\
+            </div>\
+            <!-- Submit Button -->\
+            <button type="button" onclick="submitForm()">Submit</button>\
+        </form>\
+        <div id="results" class="results"></div>\
+    </div>\
+    <script src="script.js"></script>\
+</body>\
+</html>\
+}
